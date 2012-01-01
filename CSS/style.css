@@ -1,3 +1,14 @@
+/* specify background color equivalents */
+#content { background: #fff;}
+#sidebar { background: #eee;}
+
+/* body { background-image:url(../IMAGES/bg-darker.jpg);} */
+body {     background: #21638c;
+	   background-image:url(../IMAGES/image2.jpg);
+	   padding: 0px; margin: 0px 50px 0px 50px;
+	  /* background-repeat: repeat-x, repeat;*/
+}
+
 /* Header styling */
 header { 
   background: #2D2D2D;
@@ -18,7 +29,19 @@ header {
   color: #f7f6f7;
   float: left;
   font-size: 18px;
-  padding-right: 8px;
+  padding-left: 8px;
+  padding-bottom: 8px;
+}
+
+#logo h1 { 
+  float: left;
+  width: 188px;
+  height: 29px;
+  font-family: "Gill Sans", Helvetica, Arial, sans-serif;
+  font-size: 2.4em;
+  text-transform: uppercase;
+  color: #000;
+  background: url(../IMAGES/logo.gif) no-repeat top left;
 }
 
 /* Menubar styling */
@@ -33,15 +56,24 @@ nav {
   text-align: left;
   alignment-baseline: left;
  }
+
+
+#nav li a {
+  -webkit-transition: background-color .4s linear;
+}
+
+#nav li a:hover {
+  background: rgba(0,0,0,.15);
+}
  
 a {
   text-decoration: none;
-  
   color: white;
   font-size: 11px;
   font-family: Verdana;
   padding-left: 5px;
   padding-right: 5 px;         
+  text-shadow: 2px 2px 4px #000;
  }
 
 a:hover {
@@ -50,7 +82,8 @@ a:hover {
   font-size: 14px;
   font-family: Verdana;
   padding-left: 5px;
-  padding-right: 5 px;         
+  padding-right: 5px;         
+  text-shadow: 2px 2px 4px #fff;
  }
 
 a:visited {
@@ -61,4 +94,35 @@ a:active {
   color: #0000FF;	
 }
 
+.box {
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  background-color: #eee;
+}
+
+div.box {
+  box-shadow: 2px 2px 4px #000;
+  -webkit-box-shadow: 2px 2px 4px #000;
+  -moz-box-shadow: 2px 2px 4px #000;
+  padding: 10px 10px 10px 10px;
+}
 /* Bookmarks */
+
+
+/* Easy Clearing */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* basic HTML styling */
+
+fieldset {
+  border: 0 none;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
